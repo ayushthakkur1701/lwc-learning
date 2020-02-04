@@ -1,0 +1,69 @@
+<template>
+    <div>
+
+        <div>
+            <template if:true={showLogin} data-id="loginTemplate">
+                <article class="slds-card">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <span class="slds-icon_container slds-icon-standard-account" title="account">
+                                    
+                                        <i class="material-icons md-36" >face</i>
+                                    
+                                    <span class="slds-assistive-text">Login</span>
+                                </span>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    
+                                        Login
+                                
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1"
+                            id="inline-text-email">Email</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="login_email" placeholder="type here..."
+                                aria-labelledby="inline-text-email" class="slds-input" onchange={handleName} />
+                            <div class="slds-form-element__help">ex: abc@xyz.com</div>
+                        </div>
+                    </div><br />
+
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1"
+                            id="inline-text-password">Password</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="login_password" placeholder="type here..."
+                                aria-labelledby="inline-text-password" class="slds-input" onchange={handlePassword} />
+
+                        </div>
+                    </div><br />
+                    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+                    <button variant="brand" label="Submit" title="Login Submit" onclick={handleSubmit}
+                        class="slds-button slds-button_outline-brand ">Submit</button>
+
+                    <footer class="slds-card__footer"></footer>
+                </article>
+
+                
+
+
+            </template>
+        </div>
+
+
+        <div>
+            <template if:false={showLogin}>
+                <h1>
+                    <my-dash-board component-heading={chlidComponentHeading}></my-dash-board>
+
+                </h1>
+            </template>
+        </div>
+    </div>
+</template>
