@@ -36,6 +36,7 @@
     },
     "repository": "/test-app",
     "scripts": {
+        "start":"node index.js",
         "build": "lwc-services build -m production",
         "build:development": "lwc-services build",
         "lint": "eslint ./src/**/*.js",
@@ -46,6 +47,6 @@
         "test:unit:coverage": "lwc-services test:unit --coverage",
         "test:unit:debug": "lwc-services test:unit --debug",
         "test:unit:watch": "lwc-services test:unit --watch",
-        "start": "lwc-services watch"
+        "watch": "lwc-services watch"
     }
 }
