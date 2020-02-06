@@ -1,0 +1,1 @@
+web: lwc-services watch
