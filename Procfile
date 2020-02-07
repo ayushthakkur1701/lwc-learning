@@ -1,5 +1,5 @@
 
-web: node serve
+web: yarn serve
 
 
 
