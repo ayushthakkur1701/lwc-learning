@@ -12,7 +12,7 @@ logs
 
 # Tooling files
 node_modules
-
+.npm-global
 # Temp directory
 /tmp
 
@@ -27,4 +27,4 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
-.env
+
