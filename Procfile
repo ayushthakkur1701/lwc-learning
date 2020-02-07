@@ -1,5 +1,5 @@
 
-web: yarn serve
+web: npm run serve
 
 
 
