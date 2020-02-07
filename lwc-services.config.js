@@ -8,4 +8,12 @@ module.exports = {
           to: 'src/SLDS'
         }
       ],
+    sourceDir: './src/client',
+    moduleDir: './src/client/modules',
+    server: {
+        customConfig: './src/server/index.js'
+    },
+    devServer: {
+        proxy: { '/': 'http://localhost:3001' }
+    }
 };

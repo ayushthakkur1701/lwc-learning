@@ -1,0 +1,34 @@
+{
+    "name": "lwc-learning",
+    "description": "LWC Open Source ",
+    "repository": "https://github.com/ayushthakkur1701/lwc-learning.git",
+    "logo": "https://developer.salesforce.com/resources2/quests/badge2.png",
+    "keywords": ["node", "express", "static"],
+    "env": {
+        "SF_LOGIN_URL": {
+            "required": true
+        },
+        "SF_PASSWORD" : {
+            "required" : true
+        },
+        "SF_TOKEN" : {
+            "required" : true   
+        },
+        "SF_USERNAME" : {
+            "required" : true   
+        }
+    },
+    "scripts": {},
+    "formation": {
+        "web": {
+            "quantity": 1
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "stack": "heroku-18"
+}
